@@ -1,0 +1,84 @@
+.page {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  width: 85%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+}
+
+.box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.sky {
+  background-color: skyblue;
+}
+
+.ground {
+  background-image: url(game-images/images/main/ground.png);
+}
+
+.ground_grass {
+  background-image: url(game-images/images/main/ground_grass.png);
+}
+
+.leafs {
+  background-image: url(game-images/images/main/grass.png);
+}
+
+.wood {
+  background-image: url(game-images/images/main/wood.png);
+}
+
+.stone {
+  background-image: url(game-images/images/main/stone.png);
+}
+
+.side {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tool {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid black;
+  border-radius: 12px;
+  width: 12vh;
+  height: 12vh;
+}
+
+.pickaxe {
+  background-image: url(game-images/images/tools/pickaxe.png);
+  cursor: pointer;
+}
+
+.axe {
+  background-image: url(game-images/images/tools/axe.png);
+  cursor: pointer;
+}
+
+.shovel {
+  background-image: url(game-images/images/tools/shovel.png);
+  cursor: pointer;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: yellow;
+  height: 12vh;
+  width: 100%;
+}
